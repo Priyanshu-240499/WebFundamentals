@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+        function mydoc(){
+            console.log(document);
+            console.log("Welcome to dom in js")
+
+            var h2REF=document.getElementById("Id");
+        h2REF.innerText="Hello js,You are easy to understand";
+
+        var h3rf=document.getElementById("h3");
+        h3rf.innerText="javascript elements";
+
+
+        }
+        
+    </script>
+    <style>
+      body {
+        background-color: lightcoral;
+      }
+      h2 {
+        color: white;
+      }
+      div {
+        background-color: rgb(0, 38, 255);
+        width: 500px;
+        margin: 100px auto;
+        padding: 50px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+      } 
+    </style>
+
+    
+  </head>
+  <body>
+    <div>
+      <h2 id="Id">Hello HTML, You are Awesome</h2>
+      <button onclick="mydoc()">Change Content</button>
+    </div>
+
+    <div>
+        <h3 id="h3">HTML Elements</h3>
+        <ul id="list">
+            <li>HTML</li>
+            <li>header</li>
+            <li>main</li>
+            <li>footer</li>
+            <li>section</li>        
+        </ul>
+        <button onclick="mydoc()" >click me</button>
+    </div>
+  </body>
+</html>

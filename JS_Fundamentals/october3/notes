@@ -1,0 +1,30 @@
+                                                //  Variable  Scope
+
+// Their are three types of Scope in JS i.e
+//  global scope-entire space in js file is called global scope
+//   function scope-entire space in function is called functionscope
+//    block scope-if we have more block in function like if then it is called block scope;
+
+// NOTE:_ If var,let ,const are defined in Global scope,they are accesseable everywhere; 
+
+// 1.var- function scope ;;;follow all three declartion given below;;;can change the value 
+// 2.let-  block scope ;;;follow all three declartion given below;;;can change the value 
+// 3.const- block scope;;; follow only intialization;;;cannot change the intial value 
+
+// var a;------variable declaration
+// a=50;-------variable assignment
+// var a=50------variable intialization
+
+
+
+//                                                   Events
+// They are a actions perform on webpage or system on which you can react
+// 1.on click
+// 2.change
+// 3.keypress
+// 4.keyup
+// 5.keydown
+// 6.mouseover
+// 7.mouseenter
+// 8.mouseleave
+

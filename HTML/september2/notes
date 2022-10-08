@@ -1,0 +1,52 @@
+                                          CSS POSITION
+
+static(default);we cant add offsets(top,bottom,left right)
+
+relative:In this it will move with respect to its static position(top,bottom,left,right);
+         Firstly in css make position:relative then use top, bottom,left or right
+
+absolute: if we have parent, it takes the absolute position below the parent,and can even overlap.It takes 
+position with respect to the parent
+         (top,...);
+
+fixed:It position elements according to viewport of different devices() like in nav bars un some websites
+
+Sticky:- position on basis of users scroll position,similar to fixed,but becomes fixed when end is touched by 
+scroll bar
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+                                          CSS DISPLAY
+It is used to control the layout,we can also put none
+
+1.block:-div,para,heading tags(h1,...)etc
+2.inline:-span,img
+If we make a block element inline we cannot change its height or width,but if we make it inline block,we can 
+do it
+3.inline-block:It allows both inline as well as block properties,like height and width
+4.flex
+5.grid
+--------------------------------------------------------------------------------------------------------------
+                                        Other basic properties
+
+1--css colors
+-direct
+-using hex code
+-rgba
+
+2--background
+-background-color
+
+-background-image:
+-url('');note to stop repeating image add
+- background-repeat:no-repeat
+-background-attachment:fixed,scroll(for image)
+-background-position:top,bottom,left,right,then pairings like top left etc(for image)
+- background-size:cover(covers entire div),contain(almost similar)
+SHORTCUT-background-image:pink url() no repeat fixed centre centre 
+
+3--border:
+none,solid,dotted,dashed,double,groove,ridge(light colour),inset,
+border-radius
+border-color
+
+

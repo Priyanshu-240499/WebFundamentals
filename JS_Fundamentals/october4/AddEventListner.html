@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div>
+        <!-- <button></button> -->
+        <button id="a1">Without event</button>
+        <p id="p" >HI</p>
+    </div>
+
+    <script>
+        var btn1=document.getElementById("a1");
+        var p=  document.getElementById("p");
+        btn1.addEventListener("click",function(){
+        // var p=  document.getElementById("p");
+        p.style.color="red";
+        p.addEventListener("mouseenter",function(){
+            p.style.fontSize="200%";
+            
+        })
+        p.addEventListener("mouseleave",function(){
+            p.style.fontSize="100%";
+            
+        })
+        })
+        
+
+        
+    </script>
+    
+</body>
+</html>

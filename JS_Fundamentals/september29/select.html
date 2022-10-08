@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fn(e){
+           var h2_ref= document.getElementById("h2");
+           switch(e.target.value){
+            case "HTML":
+                h2_ref.innerText="HTML is selected";
+                break;
+                case "CSS":
+                h2_ref.innerText="CSS is selected";
+                break;
+                case "JS":
+                h2_ref.innerText="JS is selected";
+                break;
+                case "react":
+                h2_ref.innerText="react is selected";
+                break;
+                case "angular":
+                h2_ref.innerText="angular is selected";
+                break;
+                case "Select the technology":
+                h2_ref.innerText="nothing is selected";
+                break;
+
+           }
+           
+
+            
+        }
+    </script>
+</head>
+<body>
+    <select onchange="fn(event)" >
+        <option >Select the technology</option>
+        <option >HTML</option>
+        <option >CSS</option>
+        <option >JS</option>
+        <option >react</option>
+        <option >angular</option>
+    </select>
+    <h2 id="h2">Nothing is selected</h2>
+    
+</body>
+</html>

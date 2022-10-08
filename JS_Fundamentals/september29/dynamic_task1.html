@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function fn(e) {
+        var input=document.getElementById("input");
+        
+        if(e.nextElementSibling===null){
+          var pref=document.createElement('p');
+          pref.innerText=input.value;
+          document.getElementById("body").appendChild(pref);
+        }
+        else{
+          e.nextElementSibling.innerText=input.value;
+        }
+     }
+    </script>
+    <style></style>
+  </head>
+  <body id="body">
+    <input type="text" value="" id="input" />
+    <button onclick="fn(this)">create p tag</button>
+
+  </body>
+</html>

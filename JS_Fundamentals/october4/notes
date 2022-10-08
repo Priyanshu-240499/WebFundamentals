@@ -1,0 +1,12 @@
+                                                       Event
+Events list---https://developer.mozilla.org/en-US/docs/Web/Events
+
+Event bubbling--It is a technique to travel the events from innermost element to oueter most element....IMPO...
+(This is the default behaviour)
+
+Event capturing--It is technique to move elelment from outer most element to inner most element
+It can be done using ---(addEventListner).
+--addEventListner--It is a prdefined function in document object and is used to add event to any html element dynamically
+
+
+

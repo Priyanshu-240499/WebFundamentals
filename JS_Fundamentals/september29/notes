@@ -1,0 +1,9 @@
+how to create html element--using createElement in document object
+synatx:
+var p_ref=document.createElement('p')
+
+------------------------------------------------------------------------------------------
+how to append the data in element
+-take body id
+-
+

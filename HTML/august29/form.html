@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div{
+            padding: 10px;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+       
+        
+       
+        
+        
+    </style>
+</head>
+<body>
+    
+    <h2>Student Registration Form</h2>
+    <!-- for attribute is for future reference like which label is used for which box.It is similar to id -->
+
+    <form action="web" method="post">
+        <div>
+        <label for="Student name">Student Name</label>
+        <br/>
+        <input 
+        type="text" 
+        name="Student name" 
+        placeholder="First name" 
+        required/>
+    </div>
+<div>
+    <label for="Address">Address</label><br/>
+    <textarea name="Address" id="Address" ></textarea>
+</div>
+<div>
+    <label for="password">Password</label><br/>
+    <input
+    type="password"
+    name="password"
+    placeholder="Enter your password"
+    />
+</div>
+<div>
+    <label for="email">Email</label><br/>
+    <input
+    type="email"
+    name="email"
+    placeholder="abcd@gmail.com"
+    />
+</div>
+<div>
+<label for="dob">Date Of Birth</label><br/>
+<input
+type="date"
+name="dob"
+/>
+</div>
+<div>
+    
+    <label for="gender">Gender</label><br/>
+    <!-- in radio case name should be same otherwise both buttons can be ticked  -->
+    <input
+    type="radio"
+    name="gender"
+    />Male <br/>
+    <input
+    type="radio"
+    name="gender"
+    />Female <br/>
+    <input
+    type="radio"
+    name="gender"
+    >Others
+</div>
+<div>
+    <label for="mobile">Mobile number</label><br/>
+    <input
+    type ="number"
+    name ="mobile"
+    placeholder="8058097472"
+    />
+</div>
+<div>
+    <label for="doc">Aadhar</label><br/>
+    <input
+    type="file" required/>
+</div>
+<div>
+    <input
+    type="button"
+    value="click me"
+    onclick="alert('clicked on button')"/>
+</div>
+<!-- important................................................... -->
+<div>
+    <input type="reset"/>
+    </div>  
+<!-- important................................................... -->
+<div>
+<input type="submit"/>
+</div>   
+
+
+    </form>
+    
+    
+</body>
+</html>

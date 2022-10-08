@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mydoc(){
+            console.log(document);
+            console.log("Welcome to dom in js")
+
+            var h2REF=document.getElementById("h2ID");
+        h2REF.innerText="Hello World";
+        }
+        
+    </script>
+</head>
+<body>
+    <div>
+        <h2 id="h2ID">JS intro</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ad error unde optio tempora dolore ipsa voluptate dolor sed ipsam? Tempore ullam voluptatem corporis fugit saepe minus obcaecati velit, quaerat aut quas porro asperiores qui dolorem nemo error ratione. Facere ipsa aspernatur doloremque repellat placeat possimus corporis, corrupti architecto enim?</p>
+    </div>
+    <button onclick="mydoc()">on click</button>
+    <div>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACT</li>
+            <li>BOOTSTRAP</li>
+            
+        </ul>
+    </div>
+    
+</body>
+</html>

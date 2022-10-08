@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Table</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <style>
+        body{
+            background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.5),rgba(0,0,0,0.3));
+            height: 640px;
+
+        }
+ 
+        #spandiv{
+            
+            justify-content: space-around;
+            display: none;
+            color: whitesmoke;
+        }
+      button {
+        padding: 1%;
+        color: whitesmoke;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      #btn1 {
+        background-color: rgb(238, 64, 34);
+      }
+      #btn2 {
+        display: none;
+        background-color: rgba(0, 128, 0, 1);
+      }
+      #div {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 5%;
+      }
+      #table{
+        display: none;
+      }
+     
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Mylink</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="div">
+      <button id="btn1">Show data</button>
+      <button id="btn2">Hide data</button>
+    </div>
+
+<div id="spandiv">
+<span>
+    <input
+    onclick="showAll()"
+    type="radio"
+    name="gender"
+    checked="checked"
+    />All 
+</span>
+<span>
+    <input
+    onclick="filter_male()"
+    type="radio"
+    name="gender"
+    />Male 
+</span>
+<span>
+    <input
+    onclick="filter_female()"
+    type="radio"
+    name="gender"
+    >Female
+</span>
+</div>
+
+
+    <table id="table" class="table table-light table-hover table-striped">
+      <thead>
+        <tr class="table-dark">
+          <th scope="col">Name</th>
+          <th scope="col">ID</th>
+          <th scope="col">Gender</th>
+          <th scope="col">Email</th>
+          <th scope="col">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mark</td>
+          <td>101</td>
+          <td>Male</td>
+          <td>mark@gmail.com</td>
+          <td>Udipur</td>
+        </tr>
+        <tr>
+            <td>Maxy</td>
+            <td>102</td>
+            <td>Female</td>
+            <td>maxy@gmail.com</td>
+            <td>Jaipur</td>
+          </tr>
+       
+      </tbody>
+    </table>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"
+      integrity="sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="showTable.js"></script>
+  </body>
+</html>

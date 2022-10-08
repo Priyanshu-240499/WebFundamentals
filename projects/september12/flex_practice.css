@@ -1,0 +1,58 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.anchor{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 10%;
+}
+.anchor a{
+    text-decoration: none;
+    color: white;
+}
+.main{
+    display :flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 20px;
+    
+}
+.main_pic{
+    padding: 7%;
+}
+.main_pic img{
+    border-radius: 50%;
+}
+.main_cont{
+    padding: 5%;
+}
+.foot{ 
+    background-color: black;
+    /* border: 1px black solid;
+     */
+    color: white;
+    text-align: center;
+    padding: 1px;
+
+}
+.foot h4{
+    letter-spacing: 5px;
+    border-bottom: 2px white double;
+    background-color: gray;
+    padding: 4px;
+}
+.foot ul{
+    margin-right: 38px;
+    border: 1px black solid;
+    list-style-type: none;
+    
+}

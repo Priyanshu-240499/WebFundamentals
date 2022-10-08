@@ -1,0 +1,9 @@
+                                       frames/frameset/iframes
+The main purpose is to embed another webpage .
+
+                                        frame and frameset
+frame and framset were used in HTML 4 and they cannot be used in body tag and works only in legacy(old browser)
+and not in moder browser(phone browser)
+
+                                         iframe
+It will work in body tag and supports legacy as well as modern browser

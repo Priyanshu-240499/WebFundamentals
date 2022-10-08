@@ -1,0 +1,28 @@
+                                       MEdia queries
+Responsive design is to practice to make your webpage look good for every screen from laptop to mobiles
+Media query is a set of style based on the browsers breakpoint.
+height and width are the elements that are need to be considered ,screen resolution and orientatiion
+
+syntax:
+@media media-type (media-feauture){
+    style
+}
+*@media means it will dictate what would be the styles that nedd to be applied
+
+*media type are the bategory of the media for device(not important to mention always)
+all:work for all devices
+print:works for devices where the media is in print preview mode
+screen: works for devices with screen(laptop mobile and all)
+speech: works for devices like screen readers
+
+*media feature are the characteristics of the browser like height, width,resolution,orientation
+
+break points:
+<!--     320px-480px     -->mobile devices
+<!--     481px-768px     -->ipad,tablets
+<!--     769px-1024px    -->small screeens,laptops
+<!--     1025px-1200px   -->dsektop,large screens
+<!--       1201px        -->extra large screens
+
+
+

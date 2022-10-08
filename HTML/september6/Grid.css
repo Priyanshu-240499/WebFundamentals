@@ -1,0 +1,36 @@
+.container{
+    width: 80%;
+    border: 1px solid black;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    grid-template-rows: auto;
+    /* grid-template-areas: 
+    'head head head head'
+    'main main . side'
+    'foot foot foot foot' ;  */
+    gap:20px 20px;
+    justify-items: end;
+}
+
+.container-items{
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;  
+}
+
+/* .item-1{
+  grid-area: head;
+}
+.item-2{
+    grid-area: main;
+  }
+  .item-3{
+    grid-area: side;
+  }
+  .item-4{
+    grid-area: foot;
+  } */
+  

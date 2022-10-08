@@ -1,0 +1,30 @@
+                                               CSS FLEXBOX
+Its a layout mechanism.Instead of using inline or inline box, we use flex or grid because it helps in making our website responsive also
+
+                                            Flex properties
+1-- Flex-direction:: row(default),column,row-reverse,column-reverse
+
+2-- Flex-Wrap:: nowrap(default),wrap,wrap-reverse(if content  is going out of page in same line,wrap helps to bring it in other line,otherwise no-wrap will diplay content in one line)
+
+3-- Flex-Flow:: combination of Flex-direction and Flex-wrap(row wrap,row nowrap)
+
+4-- justify-content:: (flex-start(default) flex-end flex-centre space-between space-evenly space-around) in copy
+
+5-- align items:: arrange in vertical direction(stretch(default),centre,flex-start,flex-end,baseline)
+baseline:all div will come in same line,like if we have different size of div then content in all divs will come in same line
+
+
+6-- align-content:: it aligns the flex container's lines when their is some extra space.
+In this flex wrap should always be set to wrap because it takes effect on multiline divs.
+It will target entire content at once
+It is a mixture of justify content and align items
+-normal(default)
+-start
+-end
+-space-between
+-sapce-around
+-space-evenly
+-stretch
+
+7--gap:: 10px 30px(row column) givens gap between content,when content is wrapped in multiple rows;
+

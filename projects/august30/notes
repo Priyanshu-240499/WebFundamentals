@@ -1,0 +1,23 @@
+html 5 is simpler and easy to use (faster)
+platform independent(can be used on any device until it has browser)
+compatibility with css increased hence became more flexible
+Linkable     
+ 
+<!-- Most new used tags in html 5 -->
+sementic elements-which explain the meaning itself like 
+<header></header>
+<footer></footer>
+<section></section>
+<main></main>
+<nav></nav>
+<span></span> (similar to div but is inline box)
+
+Media tags: audio and video tags(video as mp4,webm,ogg)(audio as mp3,wavv,ogg)
+<iframes src="",width , height,frameboerder>it is use to get website inside a website</iframes>
+
+Canvas tag (used to create circles or shapes ,or to write in a box,create graphic etc)(not important)
+
+progress (adds a loading bar 2:10)
+
+geolocation----|both uses javascript so for later purpose 
+drag and drop--|

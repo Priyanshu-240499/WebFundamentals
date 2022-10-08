@@ -1,0 +1,28 @@
+                                          animations
+animation-name(in style box)
+
+@keyframes (name){add style}
+
+animation duration(in style box)-how much time to complete
+
+animation delay-when to start the animation
+
+animation-iteration-count:number of times animation should run(we can add any number)animation-direction:whether animation should run in forward direction,backward direction or alternate cycles
+(normal,reverse,alternate,alternate-reverse)
+
+animation-timing-function:specifies the speed
+linear:constant throughout
+ease:slow-faster-slow
+ease-in: slow start
+ease-out: slow end
+ease-in-out:slow start and end
+step-start:how many intervals animation should start
+step-end:how many intervals animation should end
+initial:(default)
+inherit:inherits parent styling
+cubic-bezeir:(n,n,n,n)(it is like a curve which takes 4 numbers between 0 to 1 generally)
+
+*we can directly use animation: name duration timing-function delay iteration-count direction fill-mode;
+
+https://studysection.com/blog/how-to-use-aos-js-in-html-for-animations-on-scroll/ -------for basic animations
+https://codepen.io/tag/css-animation  -------for basic animations

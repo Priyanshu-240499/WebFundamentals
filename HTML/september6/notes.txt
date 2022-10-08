@@ -1,0 +1,49 @@
+                                           DISPLAY GRID
+* display: grid,inline grid
+--grid--generate block level grid;
+--inline grid -- generate inline level grid;
+in grid we can create in combination of row and column which is not possible in flex as it makes in one direction
+
+                                            TERMINOLOGY
+* to specify rows and columns
+--grid-template-columns:50% 50% /*or we can use repeat(2,50%) */;
+--grid-template-rows:2
+
+*grid lines in notebook
+
+*Grid tracks:Distance between grid lines
+--row track: 
+--column track:
+
+--grid-cell:each cell of grid;
+
+--grid-area:group of grid cell;
+
+--grid-gap:in notebook;
+
+--grid-template-areas;(practice done:grid2 in this folder)
+                                            
+                                              ALIGNMENT PROPERTIES
+FOR DIVS
+*justify-items: align along x-axis(start,end,center,stretch);
+*align-items: align along y-axis(start,end,center,baseline,stretch);
+*place-items:mix of above two(start,end,centre,stretch)
+
+FOR GRID
+*justify-content:above properties were to align items inside grid,but this is used to align the entire grid 
+if grid size is small and width of screen is full(along x axis)
+(start,end,centre,stretch,space-around,space-evenly,space-between)
+*align-content:above properties were to align items inside grid,but this is used to align the entire grid 
+if grid size is small and width of screen is full(along y axis)
+(start,end,centre,stretch,space-around,space-evenly,space-between)
+*place-content:mix of above two(start,end,centre,space-around,space-evenly,space-between)
+
+FOR CONTENT INSIDE DIV
+justify-self:only for the divs inside the main container(child),to align items in them(x -axis)
+(start,end,centre,stretch,space-around,space-evenly,space-between)
+align-self:justify-self:only for the divs inside the main container(child),to align items in them(xy-axis)
+(start,end,centre,stretch,space-around,space-evenly,space-between)
+*place-self:mix of above two(start,end,centre,space-around,space-evenly,space-between)
+
+
+

@@ -1,0 +1,27 @@
+.parent{
+    background-color:rgba(9, 214, 214, 1);
+    padding: 5px;
+    height: 60em;
+    position: relative;
+    top: 2px;
+}
+.child{
+    padding: 2px;
+    opacity: 1;  
+   
+
+}
+.child1{
+    background: red;
+
+}
+.child2{ 
+    background-color: yellow;
+    
+}
+.child3{
+background-color: bisque;
+}
+h2{
+    position: sticky;
+}

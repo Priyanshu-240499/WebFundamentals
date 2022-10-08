@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/e49327de27.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .navbar-nav .nav-link.active,
+      .navbar-nav .show > .nav-link {
+        color: rgb(14, 167, 14);
+      }
+      .carousel-indicators [data-bs-target]{
+        background-color:rgb(14, 167, 14); 
+        opacity: 0.2;
+      }
+      .carousel-indicators .active {
+        opacity: 1;
+    }
+      .change{
+        text-align: center;
+      }
+      .carousel-indicators{
+        top: 2em;
+      }
+      .body{
+        margin: 0.5% 10%;
+      }
+      body{
+        position: relative;
+      }
+      .green{
+        color:rgba(14, 167, 14,1);
+      }
+      .lorem{
+        text-align: center;
+        color: rgba(0,0,0,0.5);
+        margin: 2% 0%;
+        
+      }
+      #carouselExampleCaptions{
+        margin: 2%;
+      }
+      .content input{
+        border: none;
+        background-color: rgba(0,0,0,0.1);
+        font-size: smaller;
+        
+      }
+      .icon i{
+        background-color: rgba(14, 167, 14,0.2);
+        padding:6px 3px;
+        border-radius: 50%;
+        color: rgb(14, 167, 14);
+      }
+      .fl{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 2%;
+      }
+      .card{
+        border-top: 3px solid rgb(14, 167, 14) ;
+        border-bottom: 3px solid rgb(14, 167, 14) ;
+        padding: 3%;
+        margin: 3%;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+      }
+      card-img, .card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    }
+    .rt_form1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .rt_form1 input{
+        width: 100%;
+    }
+    .rt_form2 input{
+        width: 100%;
+    }
+    .querry{
+        width: 100%;
+        height: 10em;
+        resize: none;
+    }
+    .rt{
+        margin: 2%;
+    }
+    .contact_info{
+        display: flex;
+    }
+    @media screen and (max-width: 768px){
+    .contact_info{
+        flex-direction: column;
+    }
+    .card{
+        width: 100% !important;
+    }
+    .up_anchor{
+        display: none;
+    }
+    
+    }
+    
+    .up_anchor{
+        position: fixed;
+        top: 90%;
+        right: 10vh;
+        border-radius: 50%;
+        background-color: green;
+        padding: 1% 1.5%; 
+    }
+    .up_anchor i{
+        color: white;
+    }
+
+      
+      
+    </style>
+  </head>
+  <body>
+    <div class="body">
+        <a class="up_anchor" href="#navigation">
+    
+        <i class="fa-solid fa-arrow-up"></i>
+    
+    
+    </a>
+    <nav class="navbar navbar-expand-lg bg-light " id="navigation">
+      <div class="container-fluid">
+        <h2 class="green">Green</h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">team</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-success" type="submit">
+              Get Started
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active change">
+            <h2>Contact</h2>     
+        </div>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+    </div>
+    </div>
+    <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laboriosam ut quod sapiente voluptates dolorum nesciunt eius, libero explicabo obcaecati?</p>
+
+    <div class="contact_info">
+    <div class="card" style="width: 25rem;">
+        <div class="card-body">
+            <form action="web" method="post">
+                <div class="fl">
+                    <div class="icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="content">
+                        <label for="location">Location</label><br>
+                        <input type="text" name="location" placeholder="A-108 Adam Street,New York,NY 535022">
+                    </div>
+                </div>
+                <div class="fl">
+                    <div class="icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="content">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" placeholder="abcd@gmail.com">
+                    </div>
+                </div>
+                <div class="fl">
+                    <div class="icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div class="content">
+                        <label for="call">Call</label><br>
+                        <input type="number" name="call" placeholder="+91 844867718">
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        <img src="https://developers.google.com/maps/images/landing/hero_geocoding_api.png" class="card-img-top" alt="map">
+      </div>
+
+      <div class="card "  style="width: 35rem;">
+        <div class="card-body">
+            <form action="web" method="post">
+                <div class="rt_form1 rt">
+                    <div>
+                    <label for="client name">Your Name </label><br>
+                    <input type="text" name="client name"  >
+                    </div>
+                    <div>
+                    <label for="client email">Your Email</label><br>
+                    <input type="email" name="client email" >
+                    </div>
+                </div>
+                <div class="rt_form2 rt">
+                    <label for="subject">Subject</label><br>
+                    <input type="text" name="subject" >
+                </div>
+                <div class="rt_form3 rt">
+                    <label for="querry">Message</label><br>
+                    <textarea name="querry" class="querry" ></textarea>
+                </div>
+                <div class="rt_form4 rt" style="text-align: center;">
+                    <input type="submit" value="Send message" style="background-color: rgb(14, 167, 14); color: white; border: none; border-radius: 4px;padding: 2px 10px;">
+                </div>
+                
+
+            </form>
+            
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+   
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

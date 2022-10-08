@@ -1,0 +1,54 @@
+                                         CSS BOX MODEL
+
+Almost everything in html is by default surrounded by a box for ex. if we add border to <p> we are able to 
+see it.It consists of few components:
+1--content
+2--padding
+3--margin
+4--border
+NOTE:-use inspect to see in browser.........
+-------------------------------------------------------------------------------------------------------
+content and sizing
+if we dont give any width it takes the width to 100%. 
+if we give width too small the cotent will get out of the box
+The actual width is:      what we have given + padding + border + margin
+
+extrensic sizing and intrensic sizing
+if we provide width like 20px it is called extrensic sizing but if we did not have provided then intrensic
+width:min-content
+width:max-content(all content in one line )
+
+----------------------------------------THIS ABOVE IS BOX MODEL----------------------------------------
+                                          
+                                          CASCADING IN CSS
+
+When you apply multiple css to an element which CSS the browser choose is cascading:-
+1--position and order of appearance => css added in the end will be applied
+2--specificity =>the selector which has the highest specificity well be applied.It is actually a number which 
+is calculated:
+a=>universal selector (it has no specificity hence 0 points)
+
+b=>type selector(h1)and pseudo element(::)both has 1 point but for pseudo it is calculated like
+a::type then for a it is 1 and for type it is 1 makes total of 2
+NOTE when you have multiple selectors score is summed up
+
+c=> class,pseudo class,attribute selector=>10 poits
+
+d=> id selector 100 points
+
+e=>inline style attributes=1000 points
+
+f=>id we add !importance in front of any css style it will override anyother css...10,000 points(IMPORTANT)
+
+3--origin
+a=>user agent style given by browser(least specific)
+b=>local user style given by operting system like mac,linux,windows(medium specific)
+c=>author style given by us(highest)
+d=>authored with !importance
+e=>local user style with importance
+f=>user agent with importance
+
+
+
+
+

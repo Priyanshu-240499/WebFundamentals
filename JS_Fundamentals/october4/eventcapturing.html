@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div" style="text-align: center; border:1px solid blue">
+        <p id="p" style=" border:1px solid blue ;padding: 10px;">
+            <button onclick="fn()" id="btn" >on click</button>
+        </p>
+    </div>
+
+    <script>
+        
+        document.getElementById("btn").addEventListener("click",function(){
+            alert("btn pressed");
+        },true)
+        document.getElementById("p").addEventListener("click",function(){
+            alert("para pressed");
+        },true)
+        document.getElementById("div").addEventListener("click",function(){
+            alert("div pressed");
+        },true)
+        
+        
+        
+        
+
+    </script>
+    
+</body>
+</html>
