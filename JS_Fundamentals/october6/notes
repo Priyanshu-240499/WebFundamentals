@@ -1,0 +1,9 @@
+                                             KeyBoard Events
+Order of events---
+1.Keydown
+2.Keypress
+3.KeyUp
+
+To catch the data event.key
+
+Try to print Enter,Delete,fn,ctr,space,shift for each keyboard event and see whether it is printing or not
