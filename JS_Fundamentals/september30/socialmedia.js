@@ -24,7 +24,7 @@ let checkFormValidation = function () {
   }
 };
 
-// C : Creating/adding the post
+// C : Creating/adding the post(storing the data in an object)
 
 //initial case: when data obj is empty
 let data = {};
