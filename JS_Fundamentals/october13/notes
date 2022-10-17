@@ -1,0 +1,6 @@
+Making objects using constructor is important because in other methods we are going to hardcode and then
+ if we make second object then it will get values of first object.EX->product.js
+
+ this is just a reference in javascript by default this will point to window object,window is the parent object in javascript
+ Inside class we always access properties and methods using this keyword
+ take notes of oops from sir github
