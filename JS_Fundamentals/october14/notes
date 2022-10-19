@@ -1,0 +1,32 @@
+static block{
+    non static members(methods,properties)---- cannot be used
+    static members(methods,properties)---- can be used using class name or this
+}
+
+non static block{
+    non static members ---can be used using this
+    static members-- can be used using class name
+}
+
+outside class{
+    non static members can be used using object name
+    static members can be used using class name
+}
+
+
+                                              JS 
+We cannot have multiple constructors in js beacuse overloading is not supported and Constructor is a type of method(specialized)
+We do not have access modifiers in js;
+we do not have abstract class and interface in js
+
+
+class, object,static-nonstatic,inheritence,overriding are supported in js
+-------------------------------------------------------------------------------------------------------------
+                                              Inheritence
+parent class/base class/super class should have is a relationship between childclass/derived class/subclass
+
+-------------------------------------------------------------------------------------------------------------
+                                              Polymorphism
+The process of defining same methods with different logic is called method overriding and any methods which 
+follows overriding technique are called polymorphic methods
+Only method overriding is supported in js
