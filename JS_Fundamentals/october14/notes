@@ -30,3 +30,7 @@ parent class/base class/super class should have is a relationship between childc
 The process of defining same methods with different logic is called method overriding and any methods which 
 follows overriding technique are called polymorphic methods
 Only method overriding is supported in js
+
+Real life example-I have a company and I developed driver for my app,now I gave third party people to develop the 
+driver for my app, and gave them the instructions that they have to use the same function name in this way they
+will use polymorphism and override their child drivers accordingly
