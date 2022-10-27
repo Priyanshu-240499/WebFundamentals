@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storage</title>
+    
+  </head>
+  <body>
+    <h2>Storage</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+      aliquam excepturi maiores quo saepe explicabo voluptates aut consequuntur!
+      Fugit accusamus ut explicabo, eligendi minus qui nihil, atque nulla sequi
+      dicta quam reprehenderit debitis eos velit perferendis obcaecati ducimus.
+      Facere veniam ipsum voluptatibus, necessitatibus neque omnis harum rem est
+      magni, incidunt expedita repudiandae quasi tempore impedit aliquam quis a
+      saepe odit nobis labore qui dolores sequi dolore! Corrupti fuga aliquam,
+      tempore perspiciatis fugit quidem nam adipisci voluptatibus eveniet nobis
+      quibusdam vero voluptatum ipsam qui nihil sit incidunt hic distinctio
+      commodi consectetur fugiat, iusto non at. Nulla magni placeat enim minus
+      molestiae error provident, laborum dolorem esse aliquam tempora
+      reprehenderit soluta deserunt ea beatae ut aspernatur dolorum, sapiente,
+      quibusdam quisquam voluptate tempore! Perferendis reprehenderit
+      praesentium voluptas qui aspernatur ipsa facilis architecto, ullam sint
+      sed expedita facere maxime alias libero ad eveniet ex consequuntur neque
+      voluptate placeat recusandae porro deleniti in iure. Deserunt blanditiis
+      accusamus molestias perspiciatis eligendi quisquam quia fuga, rem
+      recusandae iste aliquam nihil eaque saepe veritatis, eos corrupti,
+      cupiditate commodi excepturi dolorum velit voluptatem quasi. Eaque
+      doloribus vel est et a, accusamus dolore in laudantium, velit earum fuga
+      aspernatur? Mollitia sapiente exercitationem architecto error
+      necessitatibus atque, unde ipsum at ducimus!
+    </p>
+    <button id="btn1">Store data in session storage</button>
+    <button id="btn2">Access data from session storage</button>
+    <button id="btn3">Remove data from session storage</button>
+    <button id="btn4">Update data in session storage</button>
+    <button id="btn5">Clear all data</button>
+    
+    <div id="store">
+        <h2 id="h2_1"></h2>
+    </div>
+
+    <script>
+        var h2_1=document.getElementById("h2_1");
+        var btn1=document.getElementById("btn1");
+        var btn2=document.getElementById("btn2");
+        var btn3=document.getElementById("btn3");
+        var btn4=document.getElementById("btn4");
+        var btn5=document.getElementById("btn5");
+        btn1.addEventListener("click",()=>{
+           sessionStorage.setItem("Name","Priyanshu");
+           alert("Data stored successfully");
+        } )
+        btn2.addEventListener("click",()=>{
+            // var h2_1=document.createElement("h2");
+            var name=sessionStorage.getItem("Name");
+            h2_1.innerText="Name: "+name;
+            // document.getElementById("store").appendChild(h2_1);
+            
+        })
+        btn3.addEventListener("click",()=>{
+            sessionStorage.removeItem("Name");
+            alert("Data removed stored successfully");
+        })
+        btn4.addEventListener("click",()=>{
+            sessionStorage.setItem("Name","Gudda");
+            alert("Updated");
+        })
+        btn5.addEventListener("click",()=>{
+            sessionStorage.clear();
+            alert("Clear all data");
+        })
+
+        
+        
+    </script>
+  </body>
+</html>

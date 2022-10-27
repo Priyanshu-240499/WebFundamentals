@@ -1,0 +1,6 @@
+Their are three types of browser storage---It is stored in key value pairs
+1.Session storage:- It works only once and then finishes as the tab is clsed and restarts when btn is clicked again in new page
+
+2.Local storage:- Until and unless you deleete the data,data will not be deleted for that particular webpage
+
+3.Cookies-explore yourself
