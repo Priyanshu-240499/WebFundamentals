@@ -1,0 +1,6 @@
+                                                     Promise
+It is a special object which represents result of eventual completion of an asyncronus operation
+
+Their are mainly two problems-
+1.callback hell (pyramid of doom)
+2.inversion of control(if main function is not called or it is called twice etc)giving control to someone else or another code 
