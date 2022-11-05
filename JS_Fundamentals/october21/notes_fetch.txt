@@ -1,0 +1,11 @@
+fetch is a predefines function in javascript,introduces in es6 version
+It is alternate to Ajax in javascript
+using this we can send request to server side applications
+
+to send request we require---
+***method type::=>get(read  or access =>get from server), post(we need to give data to server(insert)),
+ put(to update data in server), delete(to delete data in server);
+
+***url(api)::=>if we want to get some functions from server they will provide api and using that we can perform method
+
+***data-format(optional)::=>they will prvide data key beacause it data will be in key value format (If we want to send data)

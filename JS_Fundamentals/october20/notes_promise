@@ -1,0 +1,16 @@
+Promise is basically an object and it contains some data ie success response or failure response(What is promise)
+
+3 statesof Promise to determine succes or failure response(Explain promise state)
+-pending-If the data is not present in promise object
+-fullfilled-success
+-rejected-failure
+
+Why promise-because based on respnse we will perform certain operations
+
+If I want to auomate the any task,we have to do using call back function using predefined function then() 
+and generally we add 2 then() for failure and other for success
+
+
+Handling promise object -----
+What to do after failure response and What to do after success response 
+It can be handled using promise object

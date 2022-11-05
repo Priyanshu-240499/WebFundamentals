@@ -4,6 +4,7 @@ var p_ref=document.createElement('p')
 
 ------------------------------------------------------------------------------------------
 how to append the data in element
--take body id
+-document.getelementById("").appendchild("");
+
 -
 

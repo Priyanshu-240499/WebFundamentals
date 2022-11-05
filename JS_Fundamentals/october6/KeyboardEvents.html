@@ -10,11 +10,14 @@
             console.log(e.key);
             console.log(e.code);
 
+            x = document.getElementById("area").value;
+            console.log(x.length);
+
         }
     </script>
 </head>
 <body>
-    <input type="text" placeholder="Enter text" onkeydown="accessdata(event)"/>
+    <input type="text" placeholder="Enter text" onkeydown="accessdata(event)" id="area"/>
     <!-- <input type="text" placeholder="Enter text" onkeypress="accessdata(event)"/> -->
     <!-- <input type="text" placeholder="Enter text" onkeyup="accessdata(event)"/> -->
     
