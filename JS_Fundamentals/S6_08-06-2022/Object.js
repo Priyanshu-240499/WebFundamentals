@@ -1,15 +1,16 @@
 var student = {
   name: "Rajesh",
   name: "Raj",
-  city: "Hyd",
+  city: "Mum",
 };
 
 console.log(student);
 
-student.name = "Sneha"; // updation
+student.name = "Bipasha"; // updation
 console.log(student);
 
-delete student.city;
+delete student.city;//deletion
+student.surname="Choudhary";//insertion
 console.log(student);
 //access
 //Insert

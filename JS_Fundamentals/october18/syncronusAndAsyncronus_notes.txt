@@ -1,3 +1,4 @@
+
 syncronus-
 -functions are performed step by step
 -by default js is syncronus

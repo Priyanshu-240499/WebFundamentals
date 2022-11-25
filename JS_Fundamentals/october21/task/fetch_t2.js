@@ -13,7 +13,7 @@ fetch("https://fakestoreapi.com/products")  //we are fetching data and it is ret
     document.getElementById("rowdata").style.display="block"; 
     var count=1;
     data.forEach(element => {
-        if(element.category==="electronics"){
+        // if(element.category==="electronics"){
         var tr=document.createElement("tr");
         var td1=document.createElement("td");
         var td2=document.createElement("td");
@@ -39,7 +39,7 @@ fetch("https://fakestoreapi.com/products")  //we are fetching data and it is ret
         count++;
 
         document.getElementById("tbody").appendChild(tr);
-        }
+        // }
     });
 }),function s2(){
     console.log("Something went wrong in conversion");
