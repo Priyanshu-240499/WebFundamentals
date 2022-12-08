@@ -27,3 +27,30 @@ var city = undefined;
 console.log(city); //  undefined
 
 var city = "Hyderabad";
+
+
+// ------------------------------------------------------------------------------------------------------------
+// ((entry_bonus)=>{
+// const name=prompt('What is your name?');
+// alert( `hi ${name}`);
+// document.querySelector("h1").textContent=`Welcome ${name}, you have ${entry_bonus} in your wallet`
+// })(100)
+
+
+// document.querySelector("button").addEventListener('click',print);
+// const print=(e)=>{
+//     console.log("hi").........doesnot work
+// }
+
+// function print(){
+//     console.log("hi")......... work due to hoisting
+// }
+
+// const print=function () {
+//     console.log("hi").........doesnot work
+// }
+
+var me={
+name:priyanshu,
+lname:c
+}
